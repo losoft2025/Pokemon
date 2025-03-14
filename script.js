@@ -17,7 +17,6 @@ fetch(`${urlbase}pokemon-form/pikachu/`)  // realiza la peticion
   fetch(`${urlbase}pokemon-form/pikachu/`)  // realiza la peticion
   .then((response) => response.json())    // si la promesa de la peticion se resulve
   .then((data) =>{                      // si la promesa de ejecutar .json se resuelve
-    console.log(data);
     // modificar el nodo con los datos obtenid  
   }
   ) 
@@ -30,3 +29,4 @@ buttonElement.addEventListener('click', () => {
   buttonElement.textContent = "normal";
 });
 */
+
