@@ -23,7 +23,6 @@ fetch(`${urlbase}pokemon/25/`)  // 25 es el id de pikachu   devuelve una promesa
   fetch(`${urlbase}pokemon-form/pikachu/`)  // realiza la peticion
   .then((response) => response.json())    // si la promesa de la peticion se resulve
   .then((data) =>{                      // si la promesa de ejecutar .json se resuelve
-    console.log(data);
     // modificar el nodo con los datos obtenid  
   }
   ) 
