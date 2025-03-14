@@ -1,26 +1,32 @@
 // Obtener elementos del DOM
 const urlbase ="https://pokeapi.co/api/v2/"
-const buttonElement = document.getElementsByTagName('button')[0];
-const imageElement = document.getElementsByClassName('pica')[0];
+const buttonElement = document.getElementById('acc');
+const imgElement = document.getElementById('pica');
+const nameElement =  document.getElementById('nombre');
+const descriptionElement = document.getElementById('descripcion');
+console.log(descriptionElement);
+
 
 
 // fetch para obtener los datos del backend 
-fetch(`${urlbase}pokemon-form/pikachu/`)  // realiza la peticion
-  .then((response) => response.json())    // si la promesa de la peticion se resulve
-  .then((data) =>{                      // si la promesa de ejecutar .json se resuelve
+fetch(`${urlbase}pokemon/25/`)  // 25 es el id de pikachu   devuelve una promesa
+  .then((response) => response.json())    // cuando la primera promesa se resuelve ejecuta esto
+  .then((data) =>{                      // cuando la segunda promesa se resuelve ejecuta esto
+    imgElement.src = data.sprites.front_default;
     console.log(data);
-    // modificar el nodo con los datos obtenid  
-  }
-  ) 
+   }); 
 
-  const pikachuImg = document
+   //buttonElement.addEventListener('click',()) =>{
+
+   //}
+  /*const pikachuImg = document
   fetch(`${urlbase}pokemon-form/pikachu/`)  // realiza la peticion
   .then((response) => response.json())    // si la promesa de la peticion se resulve
   .then((data) =>{                      // si la promesa de ejecutar .json se resuelve
     // modificar el nodo con los datos obtenid  
   }
   ) 
-
+*/
 
 /* Agregar evento de clic al botón
 buttonElement.addEventListener('click', () => {

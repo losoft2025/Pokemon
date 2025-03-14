@@ -24,7 +24,7 @@
 
 }
     
-.nombre {
+#nombre {
     font-size: 40px;
     text-align: center;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -34,7 +34,7 @@
     
 }
 
-.pica{
+#pica{
     margin-top: 0%;
     display: block;
     width: 160px;
@@ -44,15 +44,16 @@
     align-items: center;
         
 }
-.acc{
+#acc{
     padding: 5px;
+    margin-top: 5px;
     text-align: center;
     margin-left: 80px;
     background-color: rgba(96, 63, 128, 0.411);
 
 }
 
-.descripcion{
+#descripcion{
     padding-top: 10px;
     font-family:'Courier New', Courier, monospace
     
